@@ -1,0 +1,18 @@
+{% extends 'home/layout.html' %}
+
+{% block body %}
+<form method='post' class="loginform">
+    {% csrf_token %}     
+    <div style="text-align: center;">
+    Username
+    <br>
+    <input type="text" name="username" id="username" class='def'>
+    <br>
+    Password
+    <br>
+    <input type="password" name="password" id="password" class='def'>
+    <br>
+    <input type="submit" value="Login">
+</form>
+
+{% endblock %}
